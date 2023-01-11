@@ -1,4 +1,10 @@
 type Query {
-    info: String!,
-    name: String
+    info: String!
+    feed: [Link!]!
+}
+
+type Link {
+    id: ID!
+    url: String!
+    description: String!
 }
