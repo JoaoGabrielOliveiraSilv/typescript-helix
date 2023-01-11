@@ -8,3 +8,7 @@ type Link {
     url: String!
     description: String!
 }
+
+type Mutation {
+    post(url: String!, description: String!): Link!
+}
